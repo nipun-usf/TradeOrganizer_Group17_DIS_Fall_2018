@@ -34,7 +34,7 @@ namespace TradeOrganizer_Group17_DIS_Fall_2018
             while (current != null)
             {
                 resultList.AddStock(current.StockHolding);
-                // set next node as current
+                // set next node as current 
                 current = current.Next;
             }
             // return value of resultList variable
