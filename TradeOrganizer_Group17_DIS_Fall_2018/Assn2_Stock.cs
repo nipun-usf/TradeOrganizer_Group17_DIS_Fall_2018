@@ -17,9 +17,9 @@
     }
 
     // Constructor for initialization
-    public Stock(string symbol, string name, decimal holdings, decimal currentPrice)
+    public Stock(string symbol, string name, decimal holdings, decimal currentPrice) 
     {
-      Symbol = symbol;
+            Symbol = symbol;
       Name = name;
       Holdings = holdings;
       CurrentPrice = currentPrice;
