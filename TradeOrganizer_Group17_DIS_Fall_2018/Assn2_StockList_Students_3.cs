@@ -38,16 +38,17 @@ namespace TradeOrganizer_Group17_DIS_Fall_2018
 
             //assign head of the listToCompare to StockNode object
             StockNode current = listToCompare.head;
+            StockNode listOneHead = head;
 
             //Traverse first list till we reach end
-            while (head != null)
+            while (listOneHead != null)
             {
 
                 //Traverse listToCompare list till we reach end
                 while (current != null)
                 {
                     //Check for similarity in name and increment similarityIndex
-                    if (current.StockHolding.Name.Equals(head.StockHolding.Name))
+                    if (current.StockHolding.Name.Equals(listOneHead.StockHolding.Name))
                     {
                         similarityIndex++;
                         break;
@@ -58,7 +59,7 @@ namespace TradeOrganizer_Group17_DIS_Fall_2018
                 }
 
                 //move heads of both the linked lists
-                head = head.Next;
+                listOneHead = listOneHead.Next;
                 current = listToCompare.head;
             }
 
